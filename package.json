@@ -1,0 +1,35 @@
+{
+  "name": "book_service_testing",
+  "version": "1.0.0",
+  "description": "Tests with cypress ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "chrome": "cypress run --browser chrome --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "electron": "cypress run --browser electron --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "firefox": "cypress run --browser firefox --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "dashboard": "npx cypress run --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "cy:admin:spec1": "cypress run --spec 'cypress/integration/adminTests/addNewHallUI.spec.js'  --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "cy:admin:spec2": "cypress run --spec 'cypress/integration/adminTests/startPageAndLogin.spec.js' --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "cy:user:spec1": "cypress run --spec 'cypress/integration/userTests/bookTicket.spec.js' --record --key eb8f7545-1806-4467-a870-37563b4b7abd",
+    "cy:parallel:all:withChrome": "npm run cy:admin:spec1 -- --browser chrome --group admin/spec1 --ci-build-id 11 & npm run cy:admin:spec2 -- --browser chrome --group admin/spec2 --ci-build-id 11 & npm run cy:user:spec1 -- --browser chrome --group user/spec1 --ci-build-id 11",
+    "cy:parallel:all:withElectron": "npm run cy:admin:spec1 -- --browser electron --group admin/spec1 --ci-build-id 12 & npm run cy:admin:spec2 -- --browser electron --group admin/spec2 --ci-build-id 12 & npm run cy:user:spec1 -- --browser electron --group user/spec1 --ci-build-id 12",
+    "cy:parallel:all:withFirefox": "npm run cy:admin:spec1 -- --browser firefox --group admin/spec1 --ci-build-id 13 & npm run cy:admin:spec2 -- --browser firefox --group admin/spec2 --ci-build-id 13 & npm run cy:user:spec1 -- --browser firefox --group user/spec1 --ci-build-id 13",
+    "cy:parallel:admin:withChrome": "npm run cy:admin:spec1 -- --browser chrome --group admin/spec1 --ci-build-id 14 & npm run cy:admin:spec2 -- --browser chrome --group admin/spec2 --ci-build-id 14",
+    "cy:parallel:admin:withElectron": "npm run cy:admin:spec1 -- --browser electron --group admin/spec1 --ci-build-id 15 & npm run cy:admin:spec2 -- --browser electron --group admin/spec2 --ci-build-id 15",
+    "cy:parallel:admin:withFirefox": "npm run cy:admin:spec1 -- --browser firefox --group admin/spec1 --ci-build-id 16 & npm run cy:admin:spec2 -- --browser firefox --group admin/spec2 --ci-build-id 16"
+  },
+  "keywords": [
+    "test",
+    "cypress"
+  ],
+  "author": "SvetlanaSnegurova",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "cypress": "^13.3.3",
+    "cypress-xpath": "^1.6.2"
+  },
+  "dependencies": {
+  }
+}

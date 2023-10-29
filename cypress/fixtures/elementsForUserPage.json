@@ -1,0 +1,12 @@
+{
+    "dayElement": "//span[contains(text(), {0})]",
+    "filmSession": "//section[./div[./div[./h2[contains(text(), {0})]]]]//div[./h3[contains(text(), {1})]]//a[contains(text(), {2})]",
+    "filmTitle": ".buying__info-title",
+    "filmTime": ".buying__info-start",
+    "hallName": ".buying__info-hall",
+    "chairOfRow": ".buying-scheme__row:nth-child({0}) .buying-scheme__chair:nth-child({1})",
+    "filmTitleAfterBooking": ".ticket__info .ticket__title",
+    "hallNameAfterBooking": ":nth-child(3) > .ticket__details",
+    "filmTimeAfterBooking":".ticket__start",
+    "qrCode": ".ticket__info-qr"
+}

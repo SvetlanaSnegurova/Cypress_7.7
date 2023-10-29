@@ -1,0 +1,22 @@
+{
+    "pageHeaderTitle": ".page-header__title",
+    "pageHeaderSubtitle": ".page-header__subtitle",
+    "loginButtonTitle": ".login__title",
+    "loginInput": "[for='email'] > .login__input",
+    "passwordInput": "[for='pwd'] > .login__input",
+    "loginButton": ".login__button",
+    "hallNameInput": "form > .conf-step__label > .conf-step__input",
+    "hallConfigurations": "section:nth-child(2)",
+    "hallInConfigurationSection": "//*[@id='hall-configuration']/div/ul/li/*[@value='{0}']",
+    "priceConfiguration": "section:nth-child(3)",
+    "hallInPriceSection": "//*[@id='price-configuration']/div/ul/li/*[@value='{0}']",
+    "popupTitle": "popup__title",
+    "addSession": ".popup__container input[type='submit']",
+    "timeSessionInput": ".popup__container input.conf-step__input",
+    "saveStatus1": ".conf-step__wrapper__save-status:nth-child(2)",
+    "saveStatus2": ".conf-step__wrapper > .conf-step__wrapper__save-status",
+    "salesStatus": "#start-sales div:nth-child(3) p",
+    "hallInStartSalesSection": "//*[@id='start-sales']/div[1]/ul/li/*[@value='{0}']",
+    "deleteHallButton": "form > .conf-step__buttons > .conf-step__button-accent",
+    "filmToRemove": ":nth-child(6) > a > .conf-step__button"
+}

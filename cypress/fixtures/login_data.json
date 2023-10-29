@@ -1,0 +1,6 @@
+{
+    "startPageForAdmin": "http://qamid.tmweb.ru/admin/",
+    "login": "qamid@qamid.ru",
+    "password": "qamid",
+    "pageAfterLogin": "http://qamid.tmweb.ru/admin/index.php"
+}
