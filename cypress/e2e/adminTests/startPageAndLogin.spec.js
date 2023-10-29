@@ -8,7 +8,7 @@ describe("Проверка основной страницы и логин", () 
 
    it("Should check elements of start admin page", () => {
     cy.get(admin.pageHeaderTitle).should("have.text", "Идёмвкино");
-    cy.get(admin.pageHeaderSubtitle).should("have.text", "Администраторррская");
+    cy.get(admin.pageHeaderSubtitle).should("have.text", "Администраторская");
     cy.get(admin.loginButtonTitle).should("have.text", "Авторизация");
      });
 

@@ -11,7 +11,7 @@ describe("Тесты со стороны пользователя", () => {
         cy.visit(bookingPageUrl);
     });
  
-    it("Positive - Should book ticket (Film 3 - Супер залл - 10:00)  - tomorrow", () => {
+    it("Positive - Should book ticket (Film 3 - Супер зал - 10:00)  - tomorrow", () => {
     const day = getTomorrowDay();
     // выбираем день недели
      cy.chooseDay(day);
